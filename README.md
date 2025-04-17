@@ -30,7 +30,7 @@
 <ol>
     <li>Open your terminal and navigate to the root directory of your Magento 2.4.8 installation.</li>
     <li>Run the following command to install the module:
-        <pre><code>composer require amasty/module-mage-248-fix</code></pre>
+        <pre><code>composer require amasty/module-mage-248-fix -W</code></pre>
     </li>
     <li>Enable the module by running:
         <pre><code>php bin/magento setup:upgrade</code></pre>
