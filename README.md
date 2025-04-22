@@ -1,13 +1,18 @@
 <h1>Magento 2.4.8 Issues Fix Module</h1>
 
 <h2>Overview</h2>
-<p>This module addresses two specific issues in Magento 2.4.8:</p>
+<p>This module is required to address several specific issues in Magento 2.4.8:</p>
 <ul>
     <li>
         <strong><a target="_blank" href="https://github.com/magento/magento2/issues/39817">#39817</a></strong>: Ignored .less styles with <code>min-width: (@screen__l)</code>.
     </li>
     <li>
         <strong><a target="_blank" href="https://github.com/magento/magento2/issues/39806">#39806</a></strong>: Store switcher not working (page served from cache after store switch).
+    </li>    <li>
+        <strong><a target="_blank" href="https://github.com/magento/magento2/issues/39831">#39831</a></strong>: Calendar popup opens over display.
+    </li>
+    <li>
+        <strong><a target="_blank" href="https://github.com/magento/magento2/issues/39847">#39847</a></strong>: Table prefix is not taken into account.
     </li>
 </ul>
 <p>By resolving these issues, the module ensures a smoother and more reliable Magento 2.4.8 experience for both administrators and end-users.</p>
@@ -23,6 +28,16 @@
 <h3>Issue #39806: Store Switcher Not Working (Page Served from Cache)</h3>
 <p>
     This issue arises when switching between stores using the store switcher functionality. Instead of loading fresh content for the selected store, Magento serves the page from the cache, displaying outdated or incorrect content.
+</p>
+
+<h3>Issue #39831: Calendar popup opens over display</h3>
+<p>
+    Datepicker calendar popup may open over display or in wrong position after scrolling the page.
+</p>
+
+<h3>Issue #39847: Table prefix is not taken into account</h3>
+<p>
+   If you are using a table prefix, there will be an error on the theme change page because the table prefix is not taken into account. Fixed missing table prefix usage.
 </p>
 
 <h2>Installation</h2>
