@@ -1,5 +1,20 @@
 <h1>Magento 2.4.8 Issues Fix Module</h1>
 
+<h2>Installation</h2>
+<h3>Option 1: Installation via Composer (Recommended)</h3>
+<ol>
+    <li>Open your terminal and navigate to the root directory of your Magento 2.4.8 installation.</li>
+    <li>Run the following command to install the module:
+        <pre><code>composer config repositories.arditza_amasty_mage_248_fix vcs https://github.com/arditza/module-mage-248-fix.git</code></pre>
+        <pre><code>composer require amasty/module-mage-248-fix -W</code></pre>
+    </li>
+    <li>Enable the module by running:
+        <pre><code>php bin/magento setup:upgrade</code></pre>
+        <pre><code>php bin/magento setup:di:compile</code></pre>
+        <pre><code>php bin/magento cache:flush</code></pre>
+    </li>
+</ol>
+
 <h2>Overview</h2>
 <p>This module is required to address several specific issues in Magento 2.4.8:</p>
 <ul>
@@ -39,21 +54,6 @@
 <p>
    If you are using a table prefix, there will be an error on the theme change page because the table prefix is not taken into account. Fixed missing table prefix usage.
 </p>
-
-<h2>Installation</h2>
-<h3>Option 1: Installation via Composer (Recommended)</h3>
-<ol>
-    <li>Open your terminal and navigate to the root directory of your Magento 2.4.8 installation.</li>
-    <li>Run the following command to install the module:
-        <pre><code>composer config repositories.arditza_amasty_mage_248_fix vcs https://github.com/arditza/module-mage-248-fix.git</code></pre>
-        <pre><code>composer require amasty/module-mage-248-fix -W</code></pre>
-    </li>
-    <li>Enable the module by running:
-        <pre><code>php bin/magento setup:upgrade</code></pre>
-        <pre><code>php bin/magento setup:di:compile</code></pre>
-        <pre><code>php bin/magento cache:flush</code></pre>
-    </li>
-</ol>
 
 <h3>Option 2: Manual Installation</h3>
 <ol>
