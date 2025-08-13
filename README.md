@@ -45,6 +45,7 @@
 <ol>
     <li>Open your terminal and navigate to the root directory of your Magento 2.4.8 installation.</li>
     <li>Run the following command to install the module:
+        <pre><code>composer config repositories.arditza_amasty_mage_248_fix vcs https://github.com/arditza/module-mage-248-fix.git</code></pre>
         <pre><code>composer require amasty/module-mage-248-fix -W</code></pre>
     </li>
     <li>Enable the module by running:
